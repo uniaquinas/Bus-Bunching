@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='../../bower_components/metrics-graphics/dist/metricsgraphics.css' rel='stylesheet' type='text/css'>
+        <link href="mg-graph.css" rel="stylesheet" type="text/css">
+        
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.0/d3.min.js' charset='utf-8'></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/metrics-graphics/2.6.0/metricsgraphics.min.js"></script>
+    </head>
+    <body>
+        
+        
+        <div id="target"> </div>
+        <div class="legend"> </div>
+        
+        <script type="text/javascript">
+            
+            d3.json('../../data/BB_1av_57st_v2.json', function(data) {
+                /*for (var i = 0; i < data.length; i++) {
+                    data[i] = MG.convert.date(data[i], 'date');
+                }*/
+                
+                // set this to an empty array. 
+                // data[0] and data[2] both still arrays of objects.
+                //data[1] = [];
+                
+                data = MG.convert.date(data, 'date');
+                
+                MG.data_graphic({
+                    title: "57st & 1st Bus M15 Bunching - Line Chart",
+                    description: "This is a simple line chart.",
+                    data: data,
+                    full_height: true,
+                    full_width: true,
+                    right: 40,
+                    target: '#target',
+                    x_accessor: 'date',
+                    y_accessor: ['max_bunch_1m', 'max_bunch_2m'],
+                    y_extended_ticks: true,
+                    aggregate_rollover: true,
+                    missing_is_hidden: 'true',
+                    animate_on_load: 'true',
+                    legend: ['1m','2m'],
+                    legend_target: '.legend',
+                    linked: true
+                });
+            });
+            
+            
+            /*
+            
+            d3.json('data/fake_users2.json', function(data) {
+                for (var i = 0; i < data.length; i++) {
+                    data[i] = MG.convert.date(data[i], 'date');
+                }
+            
+                MG.data_graphic({
+                    title: "Multi-Line Chart",
+                    description: "This line chart contains multiple lines.",
+                    data: data,
+                    width: 600,
+                    height: 200,
+                    right: 40,
+                    target: '#fake_users2',
+                    legend: ['Line 1','Line 2','Line 3'],
+                    legend_target: '.legend'
+                });
+            });
+
+
+        */
+            
+            
+            
+        </script>
+        
+    </body>    
+</html>
