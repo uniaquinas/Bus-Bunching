@@ -1,0 +1,62 @@
+[
+  {
+    "route_id":"M15",
+    "date_hour":"8/1/2014 0:00",
+    "max_bunch_1m":2,
+    "max_bunch_2m":2
+  },
+  {
+    "route_id":"M15",
+    "date_hour":"8/1/2014 1:00",
+    "max_bunch_1m":2,
+    "max_bunch_2m":2
+  },
+  {
+    "route_id":"M15",
+    "date_hour":"8/1/2014 8:00",
+    "max_bunch_1m":2,
+    "max_bunch_2m":2
+  },
+  {
+    "route_id":"M15",
+    "date_hour":"8/1/2014 12:00",
+    "max_bunch_1m":2,
+    "max_bunch_2m":2
+  },
+  {
+    "route_id":"M15",
+    "date_hour":"8/1/2014 14:00",
+    "max_bunch_1m":2,
+    "max_bunch_2m":2
+  },
+  {
+    "route_id":"M15",
+    "date_hour":"8/1/2014 15:00",
+    "max_bunch_1m":2,
+    "max_bunch_2m":2
+  },
+  {
+    "route_id":"M15",
+    "date_hour":"8/1/2014 16:00",
+    "max_bunch_1m":2,
+    "max_bunch_2m":2
+  },
+  {
+    "route_id":"M15",
+    "date_hour":"8/1/2014 19:00",
+    "max_bunch_1m":2,
+    "max_bunch_2m":2
+  },
+  {
+    "route_id":"M15",
+    "date_hour":"8/1/2014 20:00",
+    "max_bunch_1m":3,
+    "max_bunch_2m":3
+  },
+  {
+    "route_id":"M15",
+    "date_hour":"8/1/2014 21:00",
+    "max_bunch_1m":2,
+    "max_bunch_2m":2
+  }
+]
